@@ -1,13 +1,13 @@
 <script>
     const sheet_id = import.meta.env.VITE_GOOGLE_SHEET_ID;
     const api_token = import.meta.env.VITE_GOOGLE_API_KEY;
-  let id = 0
+  let id = 0;
   export default {
     props: ['date'],
     data() {
         return {
             cards: [],
-            currDate: this.date,
+            // currDate: this.date,
         }
     },
     computed: {

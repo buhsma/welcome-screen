@@ -4,15 +4,16 @@ export default {
     data() {
         return {
             title: 'Welcome to Opportunity',
-            currDate: this.date
+            // currDate: this.date
     }
   },
+  
 }
 </script>
 
 <template>
     <h1>{{ title }}</h1>
-    <p>{{ currDate }}</p>
+    <p>{{ date }}</p>
 </template>
 
 <style scoped>
