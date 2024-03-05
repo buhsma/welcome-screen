@@ -22,10 +22,14 @@ export default {
             const year = today.getFullYear();
             const date = day + '.' + month + '.' + year;
             return date;
+            },
+            updateDate() {
+                this.date = this.getNow(); // Update date
             }
     },
     mounted() {
         this.date = this.getNow();
+        setInterval(this.updateDate, 1000 * 3600);
     }
 }
 </script>
